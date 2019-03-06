@@ -4,11 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 let server = http.createServer(handleRequest);
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-server.listen(port);
+server.listen(8000);
 
 function handleRequest(req, res) {
   // What did we request?
